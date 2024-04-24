@@ -1,4 +1,4 @@
-# Ofeianht Skincare With ReactJS Redux
+# Skincare Marketplace With ReactJS Redux
 
 # Features: 
          + Add to cart, remove from cart, adjust quantity.
