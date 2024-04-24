@@ -1,0 +1,307 @@
+.page__about {
+    &-wrapper {
+        .about-banner {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 0;
+            h2 {
+                font-family:Montserrat, sans-serif;
+                font-size: 34px;
+                line-height: 68px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }  
+        .about-stories {
+            background-color: rgb(255, 246, 243);
+            .stories__wrapper {
+                display: flex;
+                max-width: 1200px;
+                margin-top: 70px !important;
+                margin: 0px auto;
+                padding: 0 15px 0;
+                padding-bottom: 30px;
+                &-left {
+                    margin-top: 90px;
+                    width: 50%;
+                    padding-right: 80px;
+                    .stories-title {
+                        font-family :"Cormorant Garamond";
+                        font-size: 48px;
+                        line-height: 50px;
+                        font-weight: 400;
+                        margin-bottom: 25px;
+                    }
+                    .stories-text {
+                        font-size: 14px;
+                        line-height: 28px;
+                        font-weight: 400;
+                    }
+                    .text-active {
+                        margin-top: 10px ;
+                    }
+                }
+                &-right {
+                    width: 50%;
+                    position: relative;
+                    top: -80px;
+                    right: 0;
+                    img {
+                        width: 100%;
+                    }
+                    #circle {
+                        position: absolute;
+                        right: -40px !important;
+                        top: -27px;
+                        .center-text ,span{
+                            color:#161619;
+                            font-weight: 400;
+                        }
+                    }
+                    .let-intouch {
+                        position: absolute;
+                        right: 0;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        margin-top: 40px ;
+                    }
+                }
+            }
+        } 
+        .about-products {
+            &-wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                padding: 0px 15px;
+                flex-direction: column;
+                .title-span-pro {
+                    font-family:Holimount, sans-serif;
+                    line-height: 24px;
+                    font-size: 40px;    
+                }
+                .title-pro {
+                    font-size: 48px;
+                    margin-top: 17px;
+                    font-weight: 400;
+                    line-height: 50px;
+                    font-family :"Cormorant Garamond";
+                }
+                .text-pro {
+                    margin: 35px 0px 40px;
+                    font-size: 14px;
+                    max-width: 400px;
+                    line-height: 28px;
+                }
+                #btn-about {
+                    background-color: transparent;
+                    color: #161619;
+                    span {
+                        background-color: #161619;
+                    }
+                    &:hover {
+                        color: #fafafa;
+                        background-color:rgb(23, 23, 26);
+                    }
+                    &:hover span {
+                        background-color: #fafafa;
+                    } 
+                }
+                .product-top {
+                    display: flex;
+                    margin-left: 45px;
+                    margin-top: 100px;
+                    align-items: center;
+                    &-left {
+                        width: 55%;
+                    }
+                    &-right {
+                        width: 45%;
+                    }
+                }
+                .product-bottom {
+                    display: flex;
+                    margin-top: 40px;
+                    align-items: center;
+                    &-left {
+                        width: 50%;
+                    }
+                    &-right {
+                        width: 50%;
+                    }
+             
+                }
+            }
+
+        }     
+        .about-persons {
+            margin: 80px 0 186px;
+            display: flex;
+            justify-content: center;
+            &-wrapper {
+                display: flex;
+                max-width: 1200px ;
+                justify-content: center;
+                padding: 0 20px;
+                margin-left: -30px;
+                .about-person {
+                    width: 29%;
+                    max-height: 444px;
+                    margin-left: 30px;
+                    .person-avatar {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+        
+                    }
+                    .person-info {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        span {
+                            font-size: 12px;
+                            color: rgb(158, 154, 148);
+                            line-height: 14px;
+                            margin: 20px 0 9px;
+                        }
+                        p {
+                            line-height: 36px;
+                            font-size: 30px;
+                            font-style: italic;
+                            font-weight: 500;
+                            font-family :"Cormorant Garamond";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// responsive 
+
+@media screen and (max-width: 1024px) {
+  .stories__wrapper {
+      padding: 0 60px  50px!important;
+      .stories-title {
+          font-size: 40px !important;
+          line-height: 42px !important;
+      }
+      .title-span-pro {
+          font-size: 14px !important;
+          line-height: 28px !important;
+      }
+  }
+  .product-top {
+      &-right {
+          width: 50% !important;
+          padding-right: 50px;
+      }
+      &-left {
+          width: 50% !important;
+      }
+  }
+  .product-bottom {
+    padding:10px 70px;
+    &-right img {
+        width: 100% !important;
+    }
+  }
+  .product-top-left {
+      img {
+          width: 80%;
+      }
+  }
+  .about-person {
+      max-height: 360px !important;
+  }
+.stories__wrapper-left {
+    padding-right: 0 !important;
+    margin-top: 50px !important;
+}
+.stories__wrapper-right {
+    top: 50px !important;
+    padding-bottom: 90px;
+}
+    
+}
+@media screen and (max-width:769px) {
+    #btn-about {
+        padding: 18px 18px;
+    }
+    .product-top,.product-bottom {
+        flex-direction: column;
+    }
+    .product-top-left{
+        width: 80% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .product-top {
+        margin-left: 0 !important;
+    }
+    .product-top-right {
+        padding-right: 0 !important;
+        width: 100% !important;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    .title-pro {
+        font-size: 35px !important;
+        line-height: 25px !important;
+    }
+    .text-pro{
+        margin-top: 20px !important;
+        font-size: 13px !important;
+    }
+    .product-bottom {
+        padding: 0 20px;
+        margin-top: 50px !important;
+        &-left {
+            margin-top: 30px;
+            order: 2 !important;
+            width: 100% !important;
+        }
+        &-right {
+            width: 90% !important;
+            margin-top: 20px;
+            order: 1 !important;
+        }
+    }
+    .about-person {
+        max-height: 260px !important;
+    }
+}
+@media screen and(max-width:615px) {
+    .about-persons-wrapper {
+        padding: 0 40px !important;
+        align-items: center;
+        flex-direction: column;
+        .about-person {
+            margin-top: 120px;
+           width: 100% !important;
+           min-height: 350px !important;
+
+        }
+    }
+    .about-persons {
+        margin-top: -60px !important;
+    }
+    .about-stories {
+        margin-top: -70px !important;
+    }
+    .stories__wrapper {
+        flex-direction: column;
+        &-left {
+            width: 90% !important;
+        }
+        &-right {
+            width: 90% !important;
+        }
+    }
+    
+}
